@@ -1,0 +1,19 @@
+Adaptive AI Infrastructure: Balancing Accuracy, Latency, and Cost in Dynamic Inference Pipelines
+
+Pooyan Jamshidi, University of South Carolina
+
+Abstract
+
+Modern AI systems increasingly operate as complex inference pipelines rather than isolated models. A single user request may involve multiple models, services, hardware resources, batching policies, and scheduling decisions. These systems must satisfy strict latency requirements while preserving prediction quality and controlling operational cost. In industrial and cyber-physical settings, this challenge becomes even harder: workloads shift, resources fluctuate, service-level objectives change, and static deployment choices quickly become inefficient or brittle.
+
+In this talk, I will present a systems-oriented view of adaptive inference serving, where runtime configuration is treated as a multi-objective optimization problem. I will discuss a series of systems—InfAdapter, IPA, and Sponge—that progressively expand the adaptation space from single-service inference to multi-stage ML pipelines with dynamic latency constraints. These systems reason jointly about model selection, resource allocation, batching, and request scheduling to make fine-grained tradeoffs among accuracy, latency, and cost.
+
+The central question is how to make adaptation decisions that are fast enough for runtime use, safe enough for production deployment, and expressive enough to capture real system behavior. I will share empirical results, architectural lessons, and practical insights from building adaptive ML systems under uncertainty. I will also discuss how these ideas connect to broader challenges in trustworthy AI infrastructure, digital engineering, autonomous systems, and industrial AI—where intelligent systems must remain dependable while operating in changing environments.
+
+Bio
+
+Pooyan Jamshidi is an Associate Professor of Computer Science and Engineering at the University of South Carolina, where he directs research on ML systems, adaptive software, and performance optimization for AI-driven platforms. His work focuses on building inference and autonomous systems that can reason about tradeoffs, operate under uncertainty, and self-adapt to changing workloads and objectives.
+
+Prior to USC, he was a postdoctoral researcher at Carnegie Mellon University and Imperial College London, and a visiting researcher at Google. He received his Ph.D. in Computer Science from Dublin City University.
+
+His research bridges distributed systems, optimization, causal and statistical learning, and control, with applications in ML inference infrastructure, autonomous systems, and software–hardware co-design. He has published in leading systems, ML systems, and robotics venues and actively collaborates with academic and industrial partners on scalable, dependable, and production-ready AI systems.
